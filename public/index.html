@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../src/index.css" />
+    <link rel=”icon” href=”%PUBLIC_URL%/favicon.ico” />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Welcome to my website"
+    />
+    <title>Jakub Marciniak</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+      var docWidth = document.documentElement.offsetWidth;
+
+      [].forEach.call(
+        document.querySelectorAll('*'),
+        function(el) {
+          if (el.offsetWidth > docWidth) {
+            console.log(el);
+          }
+        }
+      );
+    </script>
+  </body>
+</html>
